@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "knp4nuwtzhUyxloiaenMB1X9IrHM0p/HUTM0wwjWp+Vls2F024tVv1ptL92mxDNBY9/8nJs90WWf2kG9QHk3YQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\UTENTE\\Documents\\cs_studio\\ScoreBoard\\ScoreBoard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\UTENTE\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\5.0.17\\microsoft.netcore.app.host.win-x86.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

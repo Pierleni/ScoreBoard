@@ -1,0 +1,16 @@
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\bin\Debug\net5.0-windows\ScoreBoard.exe
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\bin\Debug\net5.0-windows\ScoreBoard.deps.json
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\bin\Debug\net5.0-windows\ScoreBoard.runtimeconfig.json
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\bin\Debug\net5.0-windows\ScoreBoard.runtimeconfig.dev.json
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\bin\Debug\net5.0-windows\ScoreBoard.dll
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\bin\Debug\net5.0-windows\ScoreBoard.pdb
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\obj\Debug\net5.0-windows\ScoreBoard.csproj.AssemblyReference.cache
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\obj\Debug\net5.0-windows\ScoreBoard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\obj\Debug\net5.0-windows\ScoreBoard.AssemblyInfoInputs.cache
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\obj\Debug\net5.0-windows\ScoreBoard.AssemblyInfo.cs
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\obj\Debug\net5.0-windows\ScoreBoard.csproj.CoreCompileInputs.cache
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\obj\Debug\net5.0-windows\ScoreBoard.dll
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\obj\Debug\net5.0-windows\refint\ScoreBoard.dll
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\obj\Debug\net5.0-windows\ScoreBoard.pdb
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\obj\Debug\net5.0-windows\ScoreBoard.genruntimeconfig.cache
+C:\Users\UTENTE\Documents\cs_studio\ScoreBoard\obj\Debug\net5.0-windows\ref\ScoreBoard.dll
