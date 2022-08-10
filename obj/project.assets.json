@@ -1,36 +1,36 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net6.0-windows7.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\UTENTE\\.nuget\\packages\\": {}
+    "C:\\Users\\Marco\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\UTENTE\\Documents\\cs_studio\\ScoreBoard\\ScoreBoard.csproj",
+      "projectUniqueName": "C:\\Users\\Marco\\Documents\\csharp\\ScoreBoard\\ScoreBoard.csproj",
       "projectName": "ScoreBoard",
-      "projectPath": "C:\\Users\\UTENTE\\Documents\\cs_studio\\ScoreBoard\\ScoreBoard.csproj",
-      "packagesPath": "C:\\Users\\UTENTE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UTENTE\\Documents\\cs_studio\\ScoreBoard\\obj\\",
+      "projectPath": "C:\\Users\\Marco\\Documents\\csharp\\ScoreBoard\\ScoreBoard.csproj",
+      "packagesPath": "C:\\Users\\Marco\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Marco\\Documents\\csharp\\ScoreBoard\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\UTENTE\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Marco\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows"
+        "net6.0-windows"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0-windows7.0": {
-          "targetAlias": "net5.0-windows",
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
           "projectReferences": {}
         }
       },
@@ -41,8 +41,8 @@
       }
     },
     "frameworks": {
-      "net5.0-windows7.0": {
-        "targetAlias": "net5.0-windows",
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
         "imports": [
           "net461",
           "net462",
@@ -53,12 +53,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x86",
-            "version": "[5.0.17, 5.0.17]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -67,7 +61,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

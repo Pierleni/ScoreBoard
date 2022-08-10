@@ -1,0 +1,15 @@
+C:\Users\Marco\Documents\csharp\ScoreBoard\bin\Debug\net6.0-windows\ScoreBoard.exe
+C:\Users\Marco\Documents\csharp\ScoreBoard\bin\Debug\net6.0-windows\ScoreBoard.deps.json
+C:\Users\Marco\Documents\csharp\ScoreBoard\bin\Debug\net6.0-windows\ScoreBoard.runtimeconfig.json
+C:\Users\Marco\Documents\csharp\ScoreBoard\bin\Debug\net6.0-windows\ScoreBoard.dll
+C:\Users\Marco\Documents\csharp\ScoreBoard\bin\Debug\net6.0-windows\ScoreBoard.pdb
+C:\Users\Marco\Documents\csharp\ScoreBoard\obj\Debug\net6.0-windows\ScoreBoard.csproj.AssemblyReference.cache
+C:\Users\Marco\Documents\csharp\ScoreBoard\obj\Debug\net6.0-windows\ScoreBoard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marco\Documents\csharp\ScoreBoard\obj\Debug\net6.0-windows\ScoreBoard.AssemblyInfoInputs.cache
+C:\Users\Marco\Documents\csharp\ScoreBoard\obj\Debug\net6.0-windows\ScoreBoard.AssemblyInfo.cs
+C:\Users\Marco\Documents\csharp\ScoreBoard\obj\Debug\net6.0-windows\ScoreBoard.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Documents\csharp\ScoreBoard\obj\Debug\net6.0-windows\ScoreBoard.dll
+C:\Users\Marco\Documents\csharp\ScoreBoard\obj\Debug\net6.0-windows\refint\ScoreBoard.dll
+C:\Users\Marco\Documents\csharp\ScoreBoard\obj\Debug\net6.0-windows\ScoreBoard.pdb
+C:\Users\Marco\Documents\csharp\ScoreBoard\obj\Debug\net6.0-windows\ScoreBoard.genruntimeconfig.cache
+C:\Users\Marco\Documents\csharp\ScoreBoard\obj\Debug\net6.0-windows\ref\ScoreBoard.dll
