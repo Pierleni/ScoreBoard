@@ -177,7 +177,7 @@ namespace ScoreBoard
             this.Guest.AutoSize =  true;
             this.Guest.Text =  "00";
             this.Guest.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Guest.Font = new System.Drawing.Font("Digital-7", 150F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Guest.Font = new System.Drawing.Font("Segoe UI", 150F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Guest.ForeColor = System.Drawing.Color.SpringGreen;
             this.Guest.Location = new System.Drawing.Point(510,328);
             this.Guest.Name =  "Guest";
@@ -244,7 +244,7 @@ namespace ScoreBoard
             this.Label7.AutoSize =  true;
             this.Label7.Text =  "0";
             this.Label7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Label7.Font = new System.Drawing.Font("Digital-7", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Label7.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Label7.ForeColor = System.Drawing.Color.Gold;
             this.Label7.Location = new System.Drawing.Point(296,410);
             this.Label7.Name =  "Label7";
@@ -257,7 +257,7 @@ namespace ScoreBoard
             this.Label8.AutoSize =  true;
             this.Label8.Text =  "0";
             this.Label8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Label8.Font = new System.Drawing.Font("Digital-7", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Label8.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Label8.ForeColor = System.Drawing.Color.Gold;
             this.Label8.Location = new System.Drawing.Point(384,410);
             this.Label8.Name =  "Label8";
