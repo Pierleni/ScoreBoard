@@ -42,8 +42,8 @@ namespace ScoreBoard
             this.TextBoxB = new System.Windows.Forms.TextBox();
             this.SCORES_A = new System.Windows.Forms.Label();
             this.SCORES_B = new System.Windows.Forms.Label();
-            this.Label7 = new System.Windows.Forms.Label();
-            this.Label8 = new System.Windows.Forms.Label();
+            this.FoulsA = new System.Windows.Forms.Label();
+            this.FoulsB = new System.Windows.Forms.Label();
             this.PlusPointA = new System.Windows.Forms.Button();
             this.Label9 = new System.Windows.Forms.Label();
             this.MinusPointA = new System.Windows.Forms.Button();
@@ -168,8 +168,8 @@ namespace ScoreBoard
             this.SplitContainer1.Panel2.Controls.Add(this.TextBoxB);
             this.SplitContainer1.Panel1.Controls.Add(this.SCORES_A);
             this.SplitContainer1.Panel2.Controls.Add(this.SCORES_B);
-            this.SplitContainer1.Panel1.Controls.Add(this.Label7);
-            this.SplitContainer1.Panel2.Controls.Add(this.Label8);
+            this.SplitContainer1.Panel1.Controls.Add(this.FoulsA);
+            this.SplitContainer1.Panel2.Controls.Add(this.FoulsB);
             this.SplitContainer1.Panel1.Controls.Add(this.PlusPointA);
             this.SplitContainer1.Panel1.Controls.Add(this.Label9);
             this.SplitContainer1.Panel1.Controls.Add(this.MinusPointA);
@@ -261,25 +261,25 @@ namespace ScoreBoard
             //
             // Label7
             //
-            this.Label7.AutoSize =  true;
-            this.Label7.Text =  "0";
-            this.Label7.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.Label7.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label7.Location = new System.Drawing.Point(304,168);
-            this.Label7.Name =  "Label7";
-            this.Label7.Size = new System.Drawing.Size(63,69);
-            this.Label7.TabIndex = 14;
+            this.FoulsA.AutoSize =  true;
+            this.FoulsA.Text =  "0";
+            this.FoulsA.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.FoulsA.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FoulsA.Location = new System.Drawing.Point(304,168);
+            this.FoulsA.Name =  "Label7";
+            this.FoulsA.Size = new System.Drawing.Size(63,69);
+            this.FoulsA.TabIndex = 14;
             //
             // Label8
             //
-            this.Label8.AutoSize =  true;
-            this.Label8.Text =  "0";
-            this.Label8.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.Label8.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label8.Location = new System.Drawing.Point(8,168);
-            this.Label8.Name =  "Label8";
-            this.Label8.Size = new System.Drawing.Size(61,67);
-            this.Label8.TabIndex = 15;
+            this.FoulsB.AutoSize =  true;
+            this.FoulsB.Text =  "0";
+            this.FoulsB.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.FoulsB.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FoulsB.Location = new System.Drawing.Point(8,168);
+            this.FoulsB.Name =  "Label8";
+            this.FoulsB.Size = new System.Drawing.Size(61,67);
+            this.FoulsB.TabIndex = 15;
             //
             // PlusPointA
             //
@@ -291,6 +291,7 @@ namespace ScoreBoard
             this.PlusPointA.TabIndex = 16;
             this.PlusPointA.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.PlusPointA.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlusPointA.Click += new System.EventHandler(BtnPlusPointA_Click);
             //
             // Label9
             //
@@ -313,6 +314,7 @@ namespace ScoreBoard
             this.MinusPointA.TabIndex = 18;
             this.MinusPointA.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.MinusPointA.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MinusPointA.Click += new System.EventHandler(BtnMinusPointZ_Click);
             //
             // Label10
             //
@@ -335,6 +337,7 @@ namespace ScoreBoard
             this.PlusPointB.TabIndex = 21;
             this.PlusPointB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.PlusPointB.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PlusPointB.Click += new System.EventHandler(BtnPlusPointK_Click);
             //
             // MinusPointB
             //
@@ -346,6 +349,7 @@ namespace ScoreBoard
             this.MinusPointB.TabIndex = 22;
             this.MinusPointB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.MinusPointB.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MinusPointB.Click += new System.EventHandler(BtnMinusPointM_Click);
             //
             // CLR_A
             //
@@ -356,6 +360,7 @@ namespace ScoreBoard
             this.CLR_A.Size = new System.Drawing.Size(88,48);
             this.CLR_A.TabIndex = 23;
             this.CLR_A.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CLR_A.Click += new System.EventHandler(ClrA_Click);
             //
             // CLR_B
             //
@@ -366,10 +371,12 @@ namespace ScoreBoard
             this.CLR_B.Size = new System.Drawing.Size(96,48);
             this.CLR_B.TabIndex = 24;
             this.CLR_B.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CLR_B.Click += new System.EventHandler(ClrB_Click);
             //
             // START
             //
-            this.BtnSTART.BackColor = System.Drawing.Color.LightGreen;
+            this.BtnSTART.Enabled = false;
+            this.BtnSTART.BackColor = System.Drawing.Color.LightGray;
             this.BtnSTART.Text =  "START";
             this.BtnSTART.Location = new System.Drawing.Point(24,136);
             this.BtnSTART.Name =  "Button7";
@@ -377,9 +384,10 @@ namespace ScoreBoard
             this.BtnSTART.TabIndex = 2;
             this.BtnSTART.Click += new System.EventHandler(BtnStart_Click);
             //
-            // Button8
+            // BtnRESET
             //
-            this.BtnRESET.BackColor = System.Drawing.Color.Gold;
+            this.BtnRESET.Enabled = false;
+            this.BtnRESET.BackColor = System.Drawing.Color.LightGray;
             this.BtnRESET.Text =  "RESET";
             this.BtnRESET.Location = new System.Drawing.Point(528,136);
             this.BtnRESET.Name =  "Button8";
@@ -387,14 +395,16 @@ namespace ScoreBoard
             this.BtnRESET.TabIndex = 25;
             this.BtnRESET.Click += new System.EventHandler(btnReset_Click);
             //
-            // Button9
+            // BtnSTOP
             //
-            this.BtnSTOP.BackColor = System.Drawing.Color.Tomato;
+            this.BtnSTOP.Enabled = false;
+            this.BtnSTOP.BackColor = System.Drawing.Color.LightGray;
             this.BtnSTOP.Text =  "STOP";
             this.BtnSTOP.Location = new System.Drawing.Point(288,136);
             this.BtnSTOP.Name =  "Button9";
             this.BtnSTOP.Size = new System.Drawing.Size(192,64);
             this.BtnSTOP.TabIndex = 26;
+            this.BtnSTOP.Click += new System.EventHandler(BtnStop_Click);
             //
             // Button10
             //
@@ -434,6 +444,7 @@ namespace ScoreBoard
             this.PlusFoulsA.Name =  "PlusFoulsA";
             this.PlusFoulsA.Size = new System.Drawing.Size(48,48);
             this.PlusFoulsA.TabIndex = 30;
+            this.PlusFoulsA.Click += new System.EventHandler(BtnPlusFoulsA_Click);
             //
             // MinusFoulsA
             //
@@ -443,6 +454,7 @@ namespace ScoreBoard
             this.MinusFoulsA.Name =  "MinusFoulsA";
             this.MinusFoulsA.Size = new System.Drawing.Size(48,48);
             this.MinusFoulsA.TabIndex = 31;
+            this.MinusFoulsA.Click += new System.EventHandler(BtnMinusFoulsA_Click);
             //
             // PlusFoulsB
             //
@@ -452,15 +464,17 @@ namespace ScoreBoard
             this.PlusFoulsB.Name =  "PlusFoulsB";
             this.PlusFoulsB.Size = new System.Drawing.Size(56,48);
             this.PlusFoulsB.TabIndex = 32;
+            this.PlusFoulsB.Click += new System.EventHandler(BtnPlusFoulsB_Click);
             //
             // MinusFoulsB
             //
             this.MinusFoulsB.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.MinusFoulsB.Text =  "_ (N)";
+            this.MinusFoulsB.Text =  "- (N)";
             this.MinusFoulsB.Location = new System.Drawing.Point(80,192);
             this.MinusFoulsB.Name =  "MinusFoulsB";
             this.MinusFoulsB.Size = new System.Drawing.Size(56,48);
             this.MinusFoulsB.TabIndex = 33;
+            this.MinusFoulsB.Click += new System.EventHandler(BtnMinusFoulsB_Click);
             //
             // form
             //
@@ -484,7 +498,6 @@ namespace ScoreBoard
 
             this.KeyPreview = true;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(Form2_KeyDown);
-            
         }
 
         #endregion
@@ -503,8 +516,8 @@ namespace ScoreBoard
         private System.Windows.Forms.TextBox TextBoxB;
         private System.Windows.Forms.Label SCORES_A;
         private System.Windows.Forms.Label SCORES_B;
-        private System.Windows.Forms.Label Label7;
-        private System.Windows.Forms.Label Label8;
+        private System.Windows.Forms.Label FoulsA;
+        private System.Windows.Forms.Label FoulsB;
         private System.Windows.Forms.Button PlusPointA;
         private System.Windows.Forms.Label Label9;
         private System.Windows.Forms.Button MinusPointA;

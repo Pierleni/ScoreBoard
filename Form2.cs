@@ -81,6 +81,16 @@ namespace ScoreBoard
             display.displayGuest = scoreB.ToString().PadLeft(2,'0');
             mirror.displayGuest = scoreB.ToString().PadLeft(2,'0');
         }
+        public void updateFoulsA(){
+            FoulsA.Text = foulsA.ToString();
+            display.displayFoulsA = foulsA.ToString();
+            mirror.displayFoulsA = foulsA.ToString();
+        }
+        public void updateFoulsB(){
+            FoulsB.Text = foulsB.ToString();
+            display.displayFoulsB = foulsB.ToString();
+            mirror.displayFoulsB = foulsB.ToString();
+        }
         public void updateTimers(){
             TimerDisplay.Text = $"{m.ToString().PadLeft(2,'0')}:{s.ToString().PadLeft(2,'0')}.{cent.ToString()}";
             display.displayTimer = $"{m.ToString().PadLeft(2,'0')}:{s.ToString().PadLeft(2,'0')}.{cent.ToString()}";
@@ -129,6 +139,44 @@ namespace ScoreBoard
                     updateScoreB();
                     break;
 
+                    case Keys.S:
+                    foulsA++;
+                    if (foulsA > 9) foulsA = 0;
+                    updateFoulsA();
+                    break;
+
+                    case Keys.X:
+                    foulsA--;
+                    if (foulsA < 0) foulsA = 0;
+                    updateFoulsA();
+                    break;
+
+                    case Keys.J:
+                    foulsB++;
+                    if (foulsB > 9) foulsB = 0;
+                    updateFoulsB();
+                    break;
+
+                    case Keys.N:
+                    foulsB--;
+                    if (foulsB < 0) foulsB = 0;
+                    updateFoulsB();
+                    break;
+
+                    case Keys.Q:
+                    scoreA = 0;
+                    foulsA = 0;
+                    updateScoreA();
+                    updateFoulsA();
+                    break;
+
+                    case Keys.O:
+                    scoreB = 0;
+                    foulsB = 0;
+                    updateScoreB();
+                    updateFoulsB();
+                    break;
+
                     case Keys.Space:
                     if (BtnSet.Enabled == false){
                         pause = !pause;
@@ -150,6 +198,7 @@ namespace ScoreBoard
             }
         }
 
+
         ///////////////////////
         //   B U T T O N S   //
         ///////////////////////
@@ -161,7 +210,25 @@ namespace ScoreBoard
             
             updateTimers();
 
-            BtnSTART.Focus();
+            if (totalSeconds > 0) {
+                BtnSTART.Enabled = true;
+                BtnSTART.BackColor = Color.SpringGreen;
+                BtnSTART.Focus();
+            }
+        }
+        // CLR_A
+        public void ClrA_Click(object sender, EventArgs e){
+            scoreA = 0;
+            foulsA = 0;
+            updateScoreA();
+            updateFoulsA();
+        }
+        // CLR_B
+        public void ClrB_Click(object sender, EventArgs e){
+            scoreB = 0;
+            foulsB = 0;
+            updateScoreB();
+            updateFoulsB();
         }
 
         // Btn START
@@ -172,10 +239,35 @@ namespace ScoreBoard
             BtnSet.Enabled = false;
             BtnSet.BackColor = Color.LightGray;
 
-            Button10.Focus();                   // DSPLY
+            BtnSTOP.Enabled = true;
+            BtnSTOP.BackColor = Color.Tomato;
+
+            Button10.Focus();                         // DSPLY
             BtnSTART.BackColor = Color.LightGray;     // START COLOR
 
+            BtnRESET.Enabled = true;
+            BtnRESET.BackColor = Color.Gold;
+            
             timerStopRestart(pause);
+        }
+        // Btn STOP
+        public void BtnStop_Click(object sender, EventArgs e) {
+            myTimer.Enabled = !myTimer.Enabled;
+            pause = !pause;
+
+            Button10.Focus();
+
+            if (pause) {
+                BtnSTOP.BackColor = Color.SpringGreen;
+                BtnSTOP.Text = "START";
+
+                timerStopRestart(pause);
+            } else {
+                BtnSTOP.BackColor = Color.Tomato;
+                BtnSTOP.Text = "STOP";
+
+                timerStopRestart(pause);
+            }
         }
 
         // Btn Reset
@@ -190,10 +282,63 @@ namespace ScoreBoard
 
                 BtnSet.Enabled = true;
                 BtnSet.BackColor = Color.Gold;
-                BtnSTART.BackColor = Color.SpringGreen;
+                
+                BtnRESET.Enabled = false;
+                BtnRESET.BackColor = Color.LightGray;
 
-                BtnSTOP.BackColor = Color.Tomato;
+                BtnSTOP.Enabled = false;
+                BtnSTOP.BackColor = Color.LightGray;
                 BtnSTOP.Text = "STOP";
+            }
+        }
+        // Btn + A
+        public void BtnPlusPointA_Click(object sender, EventArgs e){
+            scoreA++;
+            updateScoreA();
+        }
+        // Btn - Z
+        public void BtnMinusPointZ_Click(object sender, EventArgs e){
+            if (scoreA > 0) {
+                scoreA--;
+                updateScoreA();
+            }
+        }
+        // Btn + K
+        public void BtnPlusPointK_Click(object sender, EventArgs e){
+            scoreB++;
+            updateScoreB();
+        }
+        // Btn - M
+        public void BtnMinusPointM_Click(object sender, EventArgs e){
+            if (scoreB > 0) {
+                scoreB--;
+                updateScoreB();
+            }
+        }
+        // Fouls + S
+        public void BtnPlusFoulsA_Click(object sender, EventArgs e) {
+            foulsA++;
+            if (foulsA > 9) foulsA = 0;
+            updateFoulsA();
+        }
+        // Fouls - X
+        public void BtnMinusFoulsA_Click(object sender, EventArgs e) {
+            if (foulsA > 0) {
+                foulsA--;
+                updateFoulsA();
+            }
+        }
+        // Fouls + J
+        public void BtnPlusFoulsB_Click(object sender, EventArgs e) {
+            foulsB++;
+            if (foulsB > 9) foulsB = 0;
+            updateFoulsB();
+        }
+        // Fouls - N
+        public void BtnMinusFoulsB_Click(object sender, EventArgs e) {
+            if (foulsB > 0) {
+                foulsB--;
+                updateFoulsB();
             }
         }
 

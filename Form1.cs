@@ -44,6 +44,8 @@ namespace ScoreBoard
         public string displayTimer {get {return this.TimerLabel.Text;} set {this.TimerLabel.Text = value;}}
         public string displayHomeName {get {return this.Label3.Text;} set {this.Label3.Text = value;}}
         public string displayGuestName {get {return this.Label4.Text;} set {this.Label4.Text = value;}}
+        public string displayFoulsA {get {return this.Label7.Text;} set {this.Label7.Text = value;}}
+        public string displayFoulsB {get {return this.Label8.Text;} set {this.Label8.Text = value;}}
 
 
         public Form1()
