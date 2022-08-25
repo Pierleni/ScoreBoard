@@ -47,6 +47,12 @@ namespace ScoreBoard
         public string displayFoulsA {get {return this.Label7.Text;} set {this.Label7.Text = value;}}
         public string displayFoulsB {get {return this.Label8.Text;} set {this.Label8.Text = value;}}
 
+        public Label colorTimer {get {return this.TimerLabel;} set {this.TimerLabel = value;}}
+        public Label colorScoreA {get {return this.Home;} set {this.Home = value;}}
+        public Label colorScoreB {get {return this.Guest;} set {this.Guest = value;}}
+        public Label colorFoulsA {get {return this.Label7;} set {this.Label7 = value;}}
+        public Label colorFoulsB {get {return this.Label8;} set {this.Label8 = value;}}
+
 
         public Form1()
         {

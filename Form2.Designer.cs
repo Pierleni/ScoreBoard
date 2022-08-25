@@ -478,6 +478,7 @@ namespace ScoreBoard
             //
             // form
             //
+            this.Text = "3 vs 3 Andrea Gironacci";
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Location = new System.Drawing.Point(26,26);
             this.MaximizeBox =  false;

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace ScoreBoard
 {
@@ -16,6 +17,8 @@ namespace ScoreBoard
         Form1 mirror = new Form1();
 
         Timer myTimer = new Timer();
+
+        SoundPlayer splayer = new SoundPlayer(@"Alarm.wav");
 
         public int m, s, cent, totalSeconds, scoreA, scoreB, foulsA, foulsB;
         bool pause;
@@ -178,7 +181,7 @@ namespace ScoreBoard
                     break;
 
                     case Keys.Space:
-                    if (BtnSet.Enabled == false){
+                    if (BtnSet.Enabled == false & totalSeconds > 0){
                         pause = !pause;
                         timerStopRestart(pause);
                     }
@@ -289,6 +292,8 @@ namespace ScoreBoard
                 BtnSTOP.Enabled = false;
                 BtnSTOP.BackColor = Color.LightGray;
                 BtnSTOP.Text = "STOP";
+
+                ResetDisplay();
             }
         }
         // Btn + A
@@ -353,6 +358,11 @@ namespace ScoreBoard
                 m = (totalSeconds/10) / 60;
                 s = (totalSeconds/10) - (m * 60);
                 cent = totalSeconds % 10;
+            } 
+            else if (totalSeconds == 0) {
+                BtnRESET.Enabled = true;
+                BtnRESET.BackColor = Color.Gold;
+                EndGame();
             }
 
             updateTimers();
@@ -378,6 +388,53 @@ namespace ScoreBoard
                 BtnSTOP.BackColor = Color.Tomato;
                 BtnSTOP.Text = "STOP";
             }
+        }
+        public void EndGame(){
+            pause = true;
+            myTimer.Stop();
+
+            splayer.Play();
+
+            BtnSTOP.Enabled = false;
+            BtnSTOP.BackColor = Color.LightGray;
+            
+            display.BackColor = Color.Red;
+            mirror.BackColor = Color.Red;
+
+            display.colorTimer.BackColor = Color.Red;
+            mirror.colorTimer.BackColor = Color.Red;
+            display.colorTimer.ForeColor = Color.Black;
+            mirror.colorTimer.ForeColor = Color.Black;
+
+            display.colorScoreA.BackColor = Color.Red;
+            mirror.colorScoreA.BackColor = Color.Red;
+            display.colorScoreB.BackColor = Color.Red;
+            mirror.colorScoreB.BackColor = Color.Red;
+
+            display.colorFoulsA.BackColor = Color.Red;
+            mirror.colorFoulsA.BackColor = Color.Red;
+            display.colorFoulsB.BackColor = Color.Red;
+            mirror.colorFoulsB.BackColor = Color.Red;
+        }
+
+        public void ResetDisplay(){
+            display.BackColor = Color.Black;
+            mirror.BackColor = Color.Black;
+
+            display.colorTimer.BackColor = Color.Black;
+            mirror.colorTimer.BackColor = Color.Black;
+            display.colorTimer.ForeColor = Color.Red;
+            mirror.colorTimer.ForeColor = Color.Red;
+
+            display.colorScoreA.BackColor = Color.Black;
+            mirror.colorScoreA.BackColor = Color.Black;
+            display.colorScoreB.BackColor = Color.Black;
+            mirror.colorScoreB.BackColor = Color.Black;
+
+            display.colorFoulsA.BackColor = Color.Black;
+            mirror.colorFoulsA.BackColor = Color.Black;
+            display.colorFoulsB.BackColor = Color.Black;
+            mirror.colorFoulsB.BackColor = Color.Black;
         }
     }
 }
